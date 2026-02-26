@@ -76,12 +76,32 @@ def show_players(e):
 
     players = [
         "Agena",
+        "Ala",
+        "Baring",
         "Brodhagen",
         "Baylon",
+        "Cabatingan",
         "Canete",
         "Dimaculangan",
         "Evangelista",
+        "Galang",
+        "Garabiles",
+        "Gonzales",
+        "Jamet",
+        "Ledesma",
+        "Nacino",
+        "Nardo",
+        "Oliveros",
+        "Olmedo",
+        "Ong",
+        "Rebadulla",
+        "Reyes",
+        "Sangreo",
+        "Villafuerte",
+        "Villegas",
+        "Yao",
     ]
 
     for player in players:
+
         display(player, target="players")
