@@ -9,70 +9,61 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f2027;   /* SAME AS HOMEPAGE */
     color: white;
 }
 
 .container {
     width: 450px;
     padding: 50px;
-    border-radius: 25px;
+    border-radius: 12px;
     text-align: center;
-    backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    border: 1px solid rgba(255,255,255,0.15);
+    background: #1c2b36;  /* SAME CARD COLOR */
+    border-top: 6px solid #ffd700;
 }
 
 h1 {
-    font-size: 24px;
     margin-bottom: 5px;
-    background: linear-gradient(90deg, #ffd700, #ff8c00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffd700;
 }
 
 h2 {
     font-size: 14px;
     margin-bottom: 20px;
-    color: #ddd;
+    color: #cccccc;
 }
 
 .form-control {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    border: 1px solid #00ffaa;
+    background: #0f2027;
     color: white;
-    text-align: center;
 }
 
-.form-control::placeholder {
-    color: #ccc;
+.form-control:focus {
+    border-color: #ffd700;
+    outline: none;
 }
 
 .btn-primary {
     width: 100%;
     padding: 12px;
     margin-top: 15px;
-    border-radius: 30px;
+    border-radius: 6px;
     border: none;
-    cursor: pointer;
     font-weight: bold;
-    font-size: 15px;
-    background: linear-gradient(90deg, #ffd700, #ff8c00);
-    color: black;
-    transition: 0.3s ease;
+    cursor: pointer;
+    background: #ffd700;
+    color: #0f2027;
+    transition: 0.2s;
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.5);
+    background: #ffcc00;
 }
 
 #passwordalert {
@@ -82,11 +73,13 @@ h2 {
 }
 
 .back-btn {
-    margin-top: 15px;
+    width: 100%;
     padding: 10px;
-    border-radius: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
     border: none;
+    font-weight: bold;
     cursor: pointer;
-    background: linear-gradient(90deg, #ffd700, #ff8c00);
-    color: black;
+    background: #ffd700;
+    color: #0f2027;
 }
