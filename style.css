@@ -1,114 +1,62 @@
 /* ===== GLOBAL ===== */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f2027;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
     color: white;
 }
 
 /* ===== CARD ===== */
 .card {
-    background: #1c2b36;
     width: 420px;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 40px;
+    border-radius: 20px;
     text-align: center;
-    border-top: 6px solid #ffd700; /* gold accent */
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.15);
 }
 
 /* ===== HEADINGS ===== */
 h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-    letter-spacing: 1px;
-    color: #ffd700;
+    font-size: 26px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
     font-size: 14px;
-    color: #cccccc;
-}
-
-/* ===== INPUTS ===== */
-input[type="text"],
-input[type="password"],
-select {
-    width: 90%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 6px;
-    border: 1px solid #00ffaa;
-    background: #0f2027;
-    color: white;
-}
-
-input:focus,
-select:focus {
-    border-color: #ffd700;
-    outline: none;
-}
-
-/* ===== RADIO BUTTONS ===== */
-input[type="radio"] {
-    accent-color: #ffd700;
-    margin: 0 5px;
+    color: #dddddd;
+    margin-bottom: 20px;
 }
 
 /* ===== BUTTON ===== */
 button {
     width: 100%;
     padding: 12px;
-    margin-top: 15px;
-    border-radius: 6px;
+    border-radius: 30px;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    background: #ffd700;
-    color: #0f2027;
-    transition: 0.2s;
+    font-size: 15px;
+    background: linear-gradient(90deg, #ffd700, #ff8c00);
+    color: #111;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background: #ffcc00;
-}
-
-/* ===== OUTPUT TEXT ===== */
-#passwordalert,
-#output,
-#players {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #ffd700;
-}
-
-/* ===== IMAGES ===== */
-#image img {
-    margin-top: 15px;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-/* ===== NAVIGATION ===== */
-nav {
-    position: absolute;
-    top: 20px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.5);
 }
