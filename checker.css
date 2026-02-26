@@ -3,72 +3,77 @@
 }
 
 body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg, #cfd8d6, #bfc6c4);
-    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .card {
-    max-width: 700px;
-    margin: auto;
-    background: #6f8f72;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 650px;
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    color: white;
 }
 
 h2 {
     text-align: center;
-    color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    background: linear-gradient(90deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
-    font-size: 16px;
-    color: #f2f2f2;
-    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 15px;
 }
 
 input[type="radio"] {
-    margin-right: 5px;
-    margin-left: 10px;
-    accent-color: #ffd966;
+    margin: 0 8px;
+    accent-color: #ffd700;
 }
 
 select {
     width: 48%;
-    padding: 8px;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: 20px;
     border: none;
-    margin-top: 5px;
-    font-size: 15px;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.1);
+    color: white;
 }
 
 button {
     width: 100%;
-    margin-top: 20px;
-    padding: 12px;
-    font-size: 20px;
+    margin-top: 25px;
+    padding: 14px;
+    font-size: 18px;
     font-weight: bold;
+    border-radius: 30px;
     border: none;
-    border-radius: 25px;
     cursor: pointer;
-    color: #000;
-    background: linear-gradient(
-        90deg,
-        #ff6961,
-        #ffb347,
-        #fdfd96,
-        #77dd77,
-        #aec6cf
-    );
+    background: linear-gradient(90deg, #ffd700, #ff8c00);
+    color: black;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 140, 0, 0.5);
 }
 
 .output {
     text-align: center;
-    font-size: 24px;
-    color: #fff;
+    font-size: 20px;
     margin-top: 20px;
+    color: #ffd700;
 }
 
 .image {
@@ -77,39 +82,5 @@ button {
 }
 
 .image img {
-    border-radius: 12px;
-}
-
-/* ===== PLAYERS LIST DESIGN (CSS ONLY) ===== */
-
-#players {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-    counter-reset: player;
-}
-
-#players li {
-    counter-increment: player;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 8px;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    transition: 0.2s ease;
-}
-
-/* Auto Numbering */
-#players li::before {
-    content: counter(player) ". ";
-    font-weight: bold;
-    color: gold;
-}
-
-/* Hover Effect */
-#players li:hover {
-    background: rgba(255, 215, 0, 0.3);
-    transform: scale(1.02);
+    border-radius: 15px;
 }
