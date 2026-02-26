@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #cfd8d6, #bfc6c4);
+    padding: 40px;
+}
+
+.card {
+    max-width: 700px;
+    margin: auto;
+    background: #6f8f72;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #f2f2f2;
+    margin-bottom: 8px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+    accent-color: #ffd966;
+}
+
+select {
+    width: 48%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #000;
+    background: linear-gradient(
+        90deg,
+        #ff6961,
+        #ffb347,
+        #fdfd96,
+        #77dd77,
+        #aec6cf
+    );
+}
+
+.output {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.image {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.image img {
+    border-radius: 12px;
+}
+
+/* ===== PLAYERS LIST DESIGN (CSS ONLY) ===== */
+
+#players {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    counter-reset: player;
+}
+
+#players li {
+    counter-increment: player;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+/* Auto Numbering */
+#players li::before {
+    content: counter(player) ". ";
+    font-weight: bold;
+    color: gold;
+}
+
+/* Hover Effect */
+#players li:hover {
+    background: rgba(255, 215, 0, 0.3);
+    transform: scale(1.02);
+}

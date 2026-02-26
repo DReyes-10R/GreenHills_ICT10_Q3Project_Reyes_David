@@ -1,0 +1,114 @@
+/* ===== GLOBAL ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f2027;
+    color: white;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #1c2b36;
+    width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 6px solid #ffd700; /* gold accent */
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #ffd700;
+}
+
+p {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* ===== INPUTS ===== */
+input[type="text"],
+input[type="password"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #00ffaa;
+    background: #0f2027;
+    color: white;
+}
+
+input:focus,
+select:focus {
+    border-color: #ffd700;
+    outline: none;
+}
+
+/* ===== RADIO BUTTONS ===== */
+input[type="radio"] {
+    accent-color: #ffd700;
+    margin: 0 5px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: #ffd700;
+    color: #0f2027;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ffcc00;
+}
+
+/* ===== OUTPUT TEXT ===== */
+#passwordalert,
+#output,
+#players {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ffd700;
+}
+
+/* ===== IMAGES ===== */
+#image img {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    position: absolute;
+    top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

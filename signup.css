@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    color: white;
+}
+
+.container {
+    background: #0f2027;
+    width: 450px;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-top: 6px solid gold; 
+}
+
+h1 {
+    color: gold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-size: 15px;
+    color: #dddddd;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    color: #bbbbbb;
+}
+
+.form-control {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid gold;
+    background: #1c2b36;
+    color: white;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: orange;
+}
+
+.btn-primary {
+    width: 95%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    background: gold;
+    color: #0f2027;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: orange;
+    transform: scale(1.05);
+}
+
+#passwordalert {
+    margin-top: 15px;
+    color: gold;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 30px;
+    color: gold;
+    margin-bottom: 10px;
+}
